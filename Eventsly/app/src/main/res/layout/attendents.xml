@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendentsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="You Are Looking for..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <AutoCompleteTextView
+        android:textColor="@color/lightblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendtype"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:fontFamily="@font/raleway_medium"
+        android:completionThreshold="0" />
+    <TextView
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <AutoCompleteTextView
+        android:textColor="@color/lightyellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locname"
+        android:gravity="center_horizontal"
+        android:textSize="25dp"
+        android:fontFamily="@font/raleway_medium"
+        android:completionThreshold="0" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="Search"
+            android:onClick="showsearch"
+            android:fontFamily="@font/raleway_extrabold"
+            android:textColor="@color/white"
+            />
+        <LinearLayout
+            android:id="@+id/attendantsmain"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
