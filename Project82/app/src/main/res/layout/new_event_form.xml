@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/nef_background"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/nef_label"
+                android:layout_height="wrap_content"
+                android:text="Event" />
+
+            <Spinner
+                android:id="@+id/selecteventspinner"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nef_label"
+                android:text="Date" />
+
+            <CalendarView
+                android:layout_width="wrap_content"
+                android:id="@+id/calen"
+                android:layout_height="320dp"
+                android:layoutMode="clipBounds"
+                android:background="@color/white"
+                android:maxDate="10/10/2019"
+                android:minDate="04/10/2019"></CalendarView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Venue"
+                style="@style/nef_label"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/vendet"
+                android:hint="Venue"
+                android:background="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Host"
+                style="@style/nef_label"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/hostdet"
+                android:hint="Host"
+                android:background="@color/white"
+                android:textSize="30dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                style="@style/nef_label"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Details"
+                android:id="@+id/evndet"
+                android:background="@color/white"
+                android:inputType="textMultiLine"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/darkmagenta"
+                android:text="Create Event"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/raleway_bold"
+                android:onClick="geteventdetails"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

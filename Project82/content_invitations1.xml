@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".InvitationsActivity"
+    tools:showIn="@layout/invitations">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/tlstyle"
+            android:background="@color/blue"
+            android:id="@+id/table1"
+            >
+            <TableRow
+                android:background="@color/blue"
+                android:id="@+id/tr11"
+                style="@style/tlrstyle"
+                >
+
+                <TextView
+                    android:layout_column="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Get Together"
+                    style="@style/invites"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/white"
+                android:id="@+id/tr12">
+                <TextView
+                    android:fontFamily="@font/raleway_semibold"
+                    android:id="@+id/date1"
+                    android:textColor="@color/lightblue"
+                    android:text="01-10-2019 , M G Hall, Mumbai"
+                    android:textSize="25dp"
+                    style="@style/invites"
+                    android:layout_column="1"
+                    />
+            </TableRow>
+        </TableLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/tlstyle"
+            android:background="@color/red"
+            android:id="@+id/table2"
+            >
+            <TableRow
+                android:background="@color/red"
+                android:id="@+id/tr21"
+                style="@style/tlrstyle"
+                >
+                <TextView
+                    android:layout_column="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Get Together"
+                    style="@style/invites"
+                    android:textColor="@color/white"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/white"
+                android:id="@+id/tr22">
+                <TextView
+                    android:fontFamily="@font/raleway_semibold"
+                    android:id="@+id/date2"
+                    android:textColor="@color/lightred"
+                    android:text="01-10-2019 , M G Hall, Mumbai"
+                    android:textSize="25dp"
+                    style="@style/invites"
+                    android:layout_column="1"
+                    />
+            </TableRow>
+        </TableLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/tlstyle"
+            android:background="@color/yellow"
+            android:id="@+id/table3"
+            >
+            <TableRow
+                android:background="@color/yellow"
+                android:id="@+id/tr31"
+                style="@style/tlrstyle"
+                >
+                <TextView
+                    android:layout_column="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Get Together"
+                    style="@style/invites"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/white"
+                android:id="@+id/tr32">
+                <TextView
+                    android:fontFamily="@font/raleway_semibold"
+                    android:id="@+id/date3"
+                    android:textColor="@color/yellow"
+                    android:text="01-10-2019 , M G Hall, Mumbai"
+                    android:textSize="25dp"
+                    style="@style/invites"
+                    android:layout_column="1"
+                    />
+            </TableRow>
+        </TableLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/tlstyle"
+            android:background="@color/green"
+            android:id="@+id/table4"
+            >
+            <TableRow
+                android:background="@color/green"
+                android:id="@+id/tr41"
+                style="@style/tlrstyle"
+                >
+                <TextView
+                    android:layout_column="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Get Together"
+                    style="@style/invites"
+                    android:textColor="@color/white"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/white"
+                android:id="@+id/tr42">
+                <TextView
+                    android:fontFamily="@font/raleway_semibold"
+                    android:id="@+id/date4"
+                    android:textColor="@color/lightgreen"
+                    android:text="01-10-2019 , M G Hall, Mumbai"
+                    android:textSize="25dp"
+                    style="@style/invites"
+                    android:layout_column="1"
+                    />
+            </TableRow>
+        </TableLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/tlstyle"
+            android:background="@color/blue"
+            android:id="@+id/table5"
+            >
+            <TableRow
+                android:background="@color/blue"
+                android:id="@+id/tr51"
+                style="@style/tlrstyle"
+                >
+
+                <TextView
+                    android:layout_column="1"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Get Together"
+                    style="@style/invites"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/white"
+                android:id="@+id/tr52">
+                <TextView
+                    android:fontFamily="@font/raleway_semibold"
+                    android:id="@+id/date5"
+                    android:textColor="@color/lightblue"
+                    android:text="01-10-2019 , M G Hall, Mumbai"
+                    android:textSize="25dp"
+                    style="@style/invites"
+                    android:layout_column="1"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+</android.support.constraint.ConstraintLayout>
