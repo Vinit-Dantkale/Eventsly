@@ -1,2 +1,0 @@
-Here is where we will store the results after testing. 
-the test logs will be made from the Firebase TestLog
